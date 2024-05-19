@@ -1,2 +1,2 @@
 # staticWeb
-This is a static website 
+This is a static websitee

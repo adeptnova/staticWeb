@@ -1,0 +1,87 @@
+bode{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+#main-page{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item .nav-link.active {
+    color: #ffffff;
+    background: #01b5f8;
+    font-weight: 700;
+    outline: 0px;
+}
+
+.navbar-toggler {
+    background: #ec6d1e;
+}
+
+.nav-link {
+    color: #01b5f8;
+    padding: 30px 15px 8px;
+}
+
+nav.navbar.navbar-expand-lg.bg-light {
+    padding: 0px 20px 10px 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
+.padding-0 {
+    padding: 0 !important
+}
+
+.padding-1 {
+    padding: .25rem !important
+}
+
+.padding-2 {
+    padding: .5rem !important
+}
+
+.padding-3 {
+    padding: 1rem !important
+}
+
+.padding-4 {
+    padding: 1.5rem !important
+}
+
+.padding-5 {
+    padding: 3rem !important
+}
+
+.padding-top-4 {
+    padding: 1rem !important
+}
+
+.top-image {
+    background: linear-gradient(200deg, #30318f, #00b6f8, #c2e4f6, #e86e22);
+}
+
+.home-h {
+    font-weight: 700;
+    color: #2e3192;
+}
+
+.gap-3{
+    gap: 3rem;
+}
+
+.benefits {
+    background: #ec6d1e;
+    padding: 50px 0 50px 0;
+    color: #fff;
+}
