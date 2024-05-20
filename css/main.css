@@ -78,7 +78,7 @@ img{
 
 .benefits {
     background: #ec6d1e;
-    padding: 50px 0 50px 0;
+    padding: 50px 50px 50px 50px;
     color: #fff;
 }
 
@@ -119,4 +119,7 @@ img{
     position: relative;
     background: #fff;
     padding: 50px 0 0px 0;
+}
+.row, .row-fluid {
+    margin-bottom: 30px;
 }
