@@ -6,10 +6,13 @@
     <title>AdeptNova</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css"/>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/font-awesome.min.js"></script>
 </head>
 <body>
     <div id="main-page">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top" id="adeptNovaNev">
             <div class="container-fluid">
                 <img class="navbar-brand" src="images/logo.jpg" style="height: 40px;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,109 +24,576 @@
                             <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div id="home">
-            <section class="top-image">
-                <div class="container padding-top-4">
-                    <div class="row padding-4 gap-5">
-                        <div class="col-md-6 col-sm-12 flex flex-col">
-                            <h1 class="home-h">Unlocking Business Growth Through <span>AI</span> and <span>Automation</span></h1>
-                            <p>AdeptNova empowers businesses with AI-powered solutions to optimize processes, improve decision-making, and achieve greater efficiency.</p>
-                        </div>
-                        <div class="col-md-5 col-sm-12 relative">
-                            <img src="images/hero.png" />
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2">
+            <div id="home">
+                <section class="top-image">
+                    <div class="container padding-top-4">
+                        <div class="row padding-4 gap-5">
+                            <div class="col-md-6 col-sm-12 flex flex-col home-content">
+                                <h1 class="home-h">Unlocking Business Growth Through <span class="gradient-text">AI</span> and <span class="gradient-text">Automation</span></h1>
+                                <p class="logo-color-1">AdeptNova empowers businesses with AI-powered solutions to optimize processes, improve decision-making, and achieve greater efficiency.</p>
+                            </div>
+                            <div class="col-md-5 col-sm-12 relative">
+                                <img src="images/hero.png" />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="benefits">
+                </section>
+                <section class="benefits">
+                    <div>
+                        <h3>
+                            Your AI, Automation, and Data Modernization Partner
+                        </h3>
+                        <p>One-stop shop for transforming your business. We deliver innovative solutions in AI consulting, data modernization, product development, robotic process automation, and no-code platforms.</p>
+                    </div>
+                </section>
+            </div>
+            <section id="about">
                 <div>
-                    <h3>
-                        Your AI, Automation, and Data Modernization Partner
-                    </h3>
-                    <p>One-stop shop for transforming your business. We deliver innovative solutions in AI consulting, data modernization, product development, robotic process automation, and no-code platforms.</p>
+                    <div class="top-page-padding container">
+                        <h2 class="logo-color-1">About Us</h2>
+                        <p class="text-color">Welcome to AdeptNova, where Innovation Meets Expertise. At AdeptNova, we are driven by a steadfast commitment to our core values, which serve as the guiding principles for everything we do. Our mission is clear: to Empower businesses with cutting-edge AI-led technology solutions that unlock and maximize business value.</p>
+                    </div>
+                    <br>
                 </div>
-            </section>
-            <section id="about-us">
-                <div>
+                <div class="padding-4" style="background-color: #2e3192;">
+                    <div class="text-center padding-top-4">
+                        <h3 style="color: aliceblue;">Our Values</h3>
+                    </div>
+                    <div class="grid-container-1">
+                        <div class="main">
+                            <div class="card border-card-one">
+                                <p class="heading">Proficient People</p>
+                                <small class="card-con">People are the cornerstone of our success. We believe in fostering a culture of continuous learning and growth, ensuring our team remains at the forefront of technological advancements. With proficiency at our core, we strive for excellence in every endeavor.</small>
+                            </div>
+                            <div class="glasses"> 
+                                <i class="fa-solid fa-users fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="card border-card-one">
+                                <p class="heading">Delivery Commitment</p>
+                                <small class="card-con">Our unwavering commitment to delivery is paramount. We take pride in consistently meeting and exceeding client expectations, ensuring timely and successful project outcomes.</small>
+                            </div>
+                            <div class="glasses"> 
+                                <i class="fa-solid fa-clock fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="card border-card-one">
+                                <p class="heading">Agility</p>
+                                <small class="card-con">In today's rapidly evolving business landscape, agility is key. We embrace change as an opportunity for innovation, adapting swiftly to deliver tailored solutions that address our clients' unique challenges.</small>
+                            </div>
+                            <div class="glasses"> 
+                                <i class="fa-solid fa-bolt fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="card border-card-one">
+                                <p class="heading">Collaboration</p>
+                                <small class="card-con">Collaboration is ingrained in our DNA. By working closely with our clients, we forge strong partnerships built on trust and mutual respect. Together, we co-create solutions that drive business growth and success.</small>
+                            </div>
+                            <div class="glasses"> 
+                                <i class="fa-solid fa-handshake fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="card border-card-one">
+                                <p class="heading">Innovation</p>
+                                <small class="card-con">Innovation is at the heart of everything we do. As pioneers in the realm of artificial intelligence (AI) and automation, we are committed to pushing the boundaries of technology to unlock new possibilities and drive transformative change.</small>
+                            </div>
+                            <div class="glasses"> 
+                                <i class="fa-solid fa-lightbulb fa-fw"></i>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="card border-card-one">
+                                <p class="heading">Customer-Centricity</p>
+                                <small class="card-con">At AdeptNova, our clients are at the forefront of everything we do. We prioritize understanding their needs and delivering tailored solutions that exceed expectations. With a customer-centric approach, we build long-lasting relationships based on trust, transparency, and mutual success.</small>
+                            </div>
+                            <div class="glasses"> 
+                                <i class="fa-solid fa-heart fa-fw"></i>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
-            </section>
-            <section id="service">
-                <div class="container">
+                <div class="padding-top-4 container">
+                    <br>
                     <div class="row">
-                        <div class="col-md-12">
-                            <h3>
-                                Services
-                            </h3>
-                            Unlock the transformative power of AI and unlock hidden insights in your data with AdeptNova. Our AI consulting and data modernization services empower businesses to achieve greater efficiency, make data-driven decisions, and fuel growth.
+                        <div class="col-md-4">
+                            <h4 class="logo-color-1">Our Approach</h4>
+                            <p class="text-color">
+                                At AdeptNova, we are more than just a technology provider; we are strategic partners dedicated to your success. We believe in the power of collaboration and co-innovation, working hand-in-hand with our clients to navigate the complexities of today's digital landscape.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="logo-color-1">Our Expertise</h4>
+                            <p class="text-color">
+                                With a focus on AI, automation, data modernization, product development, and SAP solutions, we offer a comprehensive suite of services designed to address the diverse needs of businesses across industries. From AI consulting to robotic process automation (RPA) and beyond, we leverage cutting-edge technologies to drive efficiency, innovation, and growth.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="logo-color-1">Join Us</h4>
+                            <p class="text-color">
+                                Join us on the journey toward an AI and automation-driven future, where innovation knows no bounds, and business outcomes soar to new heights. Together, we can unlock the full potential of technology to transform your business and shape a better tomorrow.
+                            </p>
                         </div>
                     </div>
-                    <div></div>
-                    <div class="row">
-                        <div class="col-md-3 text-center">
-                            <span class="icons c1 fa fa-trophy" style="font-style: italic"></span>
-                            <div class="box-area">
-                                <h3> AI consulting (note: kindly add icons and kindly find good icon lib)</h3>
-                                <p>
-                                    AdeptNova guides businesses through their AI journey, from strategy and implementation to achieving real-world benefits like increased efficiency, improved decision-making, and a competitive edge.
+                </div>
+            </section>
+            <section id="services">
+                <div class="top-page-padding">
+                    <div class="container padding-top-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="logo-color-1">
+                                    Services
+                                </h2>
+                                <p class="text-color">
+                                    Unlock the transformative power of AI and unlock hidden insights in your data with AdeptNova. Our AI consulting and data modernization services empower businesses to achieve greater efficiency, make data-driven decisions, and fuel growth.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <span class="icons c1 fa fa-trophy" style="font-style: italic"></span>
-                            <div class="box-area">
-                                <h3> Data modernisation</h3>
-                                <p>
-                                    AdeptNova Data Modernization transforms your data infrastructure into a usable asset, unlocking valuable insights and driving data-driven decision making across your organization.
-                                </p>
+                        <div></div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-12 text-center">
+                                <span class="icons c1 fa-solid fa-brain fa-fw" style="font-style: italic"></span>
+                                <div class="box-area">
+                                    <h3 class="logo-color-1"> AI consulting</h3>
+                                    <p class="text-color">
+                                        AdeptNova guides businesses through their AI journey, from strategy and implementation to achieving real-world benefits like increased efficiency, improved decision-making, and a competitive edge.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 text-center">
+                                <span class="icons c1 fa-solid fa-database fa-fw" style="font-style: italic"></span>
+                                <div class="box-area">
+                                    <h3 class="logo-color-1"> Data modernisation</h3>
+                                    <p class="text-color">
+                                        AdeptNova Data Modernization transforms your data infrastructure into a usable asset, unlocking valuable insights and driving data-driven decision making across your organization.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 text-center">
+                                <span class="icons c1 fa-solid fa-code fa-fw" style="font-style: italic"></span>
+                                <div class="box-area">
+                                    <h3 class="logo-color-1"> Product Development</h3>
+                                    <p class="text-color">
+                                        Turn your vision into reality. AdeptNova partners throughout the software development lifecycle, delivering high-performing products with reduced time-to-market, enhanced user experience, and expert support.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 text-center">
+                                <span class="icons c1 fa-solid fa-robot fa-fw" style="font-style: italic"></span>
+                                <div class="box-area">
+                                    <h3 class="logo-color-1"> Robotic Process Automation (RPA)</h3>
+                                    <p class="text-color">
+                                        Eliminate manual work and empower your employees. AdeptNova's RPA solutions, built on UiPath & BluePrism, increase efficiency, reduce costs, and improve accuracy across your organization.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <span class="icons c1 fa fa-trophy" style="font-style: italic"></span>
-                            <div class="box-area">
-                                <h3> AI consulting (note: kindly add icons and kindly find good icon lib)</h3>
-                                <p>
-                                    AdeptNova guides businesses through their AI journey, from strategy and implementation to achieving real-world benefits like increased efficiency, improved decision-making, and a competitive edge.
-                                </p>
+                    </div>
+                </div>
+            </section>
+            <section id="service-details">
+                <div class="ser-tab container">
+                    <div class="btn-box">
+                        <button id="btn-s1" class="btn-tab logo-color-1" onclick="openTab('btn-s1', 's1')">AI consulting <i class="fa-solid fa-brain fa-fw"></i></button>
+                        <button id="btn-s2" class="logo-color-1" onclick="openTab('btn-s2', 's2')">Data modernisation <i class="fa-solid fa-database fa-fw"></i></button>
+                        <button id="btn-s3" class="logo-color-1" onclick="openTab('btn-s3', 's3')">Product Development <i class="fa-solid fa-code fa-fw"></i></button>
+                        <button id="btn-s4" class="logo-color-1" onclick="openTab('btn-s4', 's4')">Robotic Process Automation <i class="fa-solid fa-robot fa-fw"></i></button>
+                    </div>
+                    <div id="s1" class="service-bg">
+                        <h4 class="logo-color-1">Unlocking the Transformative Power of Artificial Intelligence</h4>
+                        <p class="text-color">AdeptNova AI Consulting helps businesses unlock the transformative power of Artificial Intelligence. We provide a comprehensive suite of services to guide you through every stage of your AI journey – from identifying opportunities to implementing and managing successful AI solutions. Our team of AI experts will work closely with you to understand your unique business needs and develop a customized AI strategy that drives efficiency, innovation, and growth.</p>
+                        <div class="row" style="padding-top: 2rem;">
+                            <div class="col-md-4 col-sm-12" style="align-self: center;">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                             <i class="fa-solid fa-map fa-fw"></i>&nbsp; AI Strategy & Roadmap
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-la elledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-magnifying-glass fa-fw"></i> Business Needs Assessment & Opportunity Identification</li>
+                                                <li><i class="fa-solid fa-sitemap fa-fw"></i> AI Landscape Analysis & Technology Selection</li>
+                                                <li><i class="fa-solid fa-lightbulb"></i> Proof of Concept Development & ROI Analysis</li>
+                                                <li><i class="fa-solid fa-shield-halved"></i> Creating a Responsible AI Framework</li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fa-solid fa-cube"></i> &nbsp;AI Implementation & Integration
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-database"></i> Data Acquisition & Preparation</li>
+                                                <li><i class="fa-solid fa-gear"></i> Model Development & Training (Machine Learning, Deep Learning)</li>
+                                                <li><i class="fa-solid fa-plug"></i> API & System Integration</li>
+                                                <li><i class="fa-solid fa-cloud"></i> Cloud Deployment & Infrastructure Management</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa-solid fa-chart-line"></i> &nbsp; AI Optimization & Governance
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-gauge-simple-high"></i> Model Performance Monitoring & Tuning</li>
+                                                <li><i class="fa-solid fa-scale-balanced"></i> Explainable AI (XAI) & Bias Detection</li>
+                                                <li><i class="fa-solid fa-screwdriver-wrench"></i> Ongoing Maintenance & Support</li>
+                                                <li><i class="fa-solid fa-gavel"></i> AI Governance Framework Development</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <h4 class="logo-color-1">Benefits</h4>
+                                <ul class="text-color">
+                                    <li>
+                                        <strong>Increased Efficiency & Productivity: </strong> Automate tasks, optimize processes, and free up valuable human resources.
+                                    </li>
+                                    <li>
+                                        <strong>Enhanced Decision Making: </strong> Leverage data-driven insights to make informed business decisions.
+                                    </li>
+                                    <li>
+                                        <strong>Improved Customer Experience: </strong> Personalize interactions, predict customer needs, and offer targeted recommendations.
+                                    </li>
+                                    <li>
+                                        <strong>Innovation & Competitive Advantage: </strong> Competitive Advantage: Develop unique AI-powered solutions to gain a competitive edge.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <span class="icons c1 fa fa-trophy" style="font-style: italic"></span>
-                            <div class="box-area">
-                                <h3> AI consulting (note: kindly add icons and kindly find good icon lib)</h3>
-                                <p>
-                                    AdeptNova guides businesses through their AI journey, from strategy and implementation to achieving real-world benefits like increased efficiency, improved decision-making, and a competitive edge.
-                                </p>
+                      
+                    </div>
+                    <div id="s2" class="service-bg">
+                        <h4 class="logo-color-1">Unlocking the Transformative Power of Artificial Intelligence</h4>
+                        <p class="text-color">AdeptNova Data Modernization helps businesses transform their data infrastructure into a powerful asset that drives insights and fuels growth. We eliminate data silos, optimize data quality, and implement modern technologies to empower data-driven decision-making across your organization.</p>
+                        <div class="row" style="padding-top: 2rem;">
+                            <div class="col-md-4 col-sm-12" style="align-self: center;">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                             <i class="fa-solid fa-map fa-fw"></i>&nbsp; Data Assessment & Strategy
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-la elledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-magnifying-glass fa-fw"></i> Current Data Landscape Analysis</li>
+                                                <li><i class="fa-solid fa-sitemap fa-fw"></i> Data Silos Identification & Prioritization</li>
+                                                <li><i class="fa-solid fa-lightbulb"></i> Data Governance Strategy Development</li>
+                                                <li><i class="fa-solid fa-shield-halved"></i> Modernization Roadmap & ROI Planning</li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fa-solid fa-cube"></i> &nbsp;Data Migration & Integration
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-database"></i> Secure and Efficient Data Migration to Cloud or On-Premise Solutions</li>
+                                                <li><i class="fa-solid fa-gear"></i> Data Integration Platform Implementation</li>
+                                                <li><i class="fa-solid fa-plug"></i> Data Quality Improvement & Standardization</li>
+                                                <li><i class="fa-solid fa-cloud"></i> Legacy System Integration</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa-solid fa-chart-line"></i> &nbsp; Data Management & Optimization
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-gauge-simple-high"></i> Data Lake & Data Warehouse Design and Implementation</li>
+                                                <li><i class="fa-solid fa-scale-balanced"></i> Data Lifecycle Management</li>
+                                                <li><i class="fa-solid fa-screwdriver-wrench"></i> Big Data Analytics Platform Integration</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <h4 class="logo-color-1">Benefits</h4>
+                                <ul class="text-color">
+                                    <li>
+                                        <strong>Improved Data Accessibility & Usability: </strong> Make data readily available to all authorized users for informed decision-making.
+                                    </li>
+                                    <li>
+                                        <strong>Enhanced Data Quality & Consistency: </strong> Ensure data accuracy and eliminate inconsistencies for reliable analysis.
+                                    </li>
+                                    <li>
+                                        <strong>Reduced Costs & Increased Efficiency: </strong> Streamline data management processes and optimize storage solutions.
+                                    </li>
+                                    <li>
+                                        <strong>Empower Data-Driven Decision Making: </strong> Gain valuable insights from your data to drive better business outcomes.
+                                    </li>
+                                    <li>
+                                        <strong>Improved Regulatory Compliance: </strong> Manage data effectively to meet compliance requirements.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="s3" class="service-bg">
+                        <h4 class="logo-color-1">Unlocking the Transformative Power of Artificial Intelligence</h4>
+                        <p class="text-color">AdeptNova AI Consulting helps businesses unlock the transformative power of Artificial Intelligence. We provide a comprehensive suite of services to guide you through every stage of your AI journey – from identifying opportunities to implementing and managing successful AI solutions. Our team of AI experts will work closely with you to understand your unique business needs and develop a customized AI strategy that drives efficiency, innovation, and growth.</p>
+                        <div class="row" style="padding-top: 2rem;">
+                            <div class="col-md-4 col-sm-12" style="align-self: center;">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                             <i class="fa-solid fa-map fa-fw"></i>&nbsp; AI Strategy & Roadmap
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-la elledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-magnifying-glass fa-fw"></i> Business Needs Assessment & Opportunity Identification</li>
+                                                <li><i class="fa-solid fa-sitemap fa-fw"></i> AI Landscape Analysis & Technology Selection</li>
+                                                <li><i class="fa-solid fa-lightbulb"></i> Proof of Concept Development & ROI Analysis</li>
+                                                <li><i class="fa-solid fa-shield-halved"></i> Creating a Responsible AI Framework</li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fa-solid fa-cube"></i> &nbsp;AI Implementation & Integration
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-database"></i> Data Acquisition & Preparation</li>
+                                                <li><i class="fa-solid fa-gear"></i> Model Development & Training (Machine Learning, Deep Learning)</li>
+                                                <li><i class="fa-solid fa-plug"></i> API & System Integration</li>
+                                                <li><i class="fa-solid fa-cloud"></i> Cloud Deployment & Infrastructure Management</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa-solid fa-chart-line"></i> &nbsp; AI Optimization & Governance
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-gauge-simple-high"></i> Model Performance Monitoring & Tuning</li>
+                                                <li><i class="fa-solid fa-scale-balanced"></i> Explainable AI (XAI) & Bias Detection</li>
+                                                <li><i class="fa-solid fa-screwdriver-wrench"></i> Ongoing Maintenance & Support</li>
+                                                <li><i class="fa-solid fa-gavel"></i> AI Governance Framework Development</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <h4 class="logo-color-1">Benefits</h4>
+                                <ul class="text-color">
+                                    <li>
+                                        <strong>Increased Efficiency & Productivity: </strong> Automate tasks, optimize processes, and free up valuable human resources.
+                                    </li>
+                                    <li>
+                                        <strong>Enhanced Decision Making: </strong> Leverage data-driven insights to make informed business decisions.
+                                    </li>
+                                    <li>
+                                        <strong>Improved Customer Experience: </strong> Personalize interactions, predict customer needs, and offer targeted recommendations.
+                                    </li>
+                                    <li>
+                                        <strong>Innovation & Competitive Advantage: </strong> Competitive Advantage: Develop unique AI-powered solutions to gain a competitive edge.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="s4" class="service-bg">
+                        <h4 class="logo-color-1">Unlocking the Transformative Power of Artificial Intelligence</h4>
+                        <p class="text-color">AdeptNova AI Consulting helps businesses unlock the transformative power of Artificial Intelligence. We provide a comprehensive suite of services to guide you through every stage of your AI journey – from identifying opportunities to implementing and managing successful AI solutions. Our team of AI experts will work closely with you to understand your unique business needs and develop a customized AI strategy that drives efficiency, innovation, and growth.</p>
+                        <div class="row" style="padding-top: 2rem;">
+                            <div class="col-md-4 col-sm-12" style="align-self: center;">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                             <i class="fa-solid fa-map fa-fw"></i>&nbsp; AI Strategy & Roadmap
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-la elledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-magnifying-glass fa-fw"></i> Business Needs Assessment & Opportunity Identification</li>
+                                                <li><i class="fa-solid fa-sitemap fa-fw"></i> AI Landscape Analysis & Technology Selection</li>
+                                                <li><i class="fa-solid fa-lightbulb"></i> Proof of Concept Development & ROI Analysis</li>
+                                                <li><i class="fa-solid fa-shield-halved"></i> Creating a Responsible AI Framework</li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fa-solid fa-cube"></i> &nbsp;AI Implementation & Integration
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-database"></i> Data Acquisition & Preparation</li>
+                                                <li><i class="fa-solid fa-gear"></i> Model Development & Training (Machine Learning, Deep Learning)</li>
+                                                <li><i class="fa-solid fa-plug"></i> API & System Integration</li>
+                                                <li><i class="fa-solid fa-cloud"></i> Cloud Deployment & Infrastructure Management</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed logo-color-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa-solid fa-chart-line"></i> &nbsp; AI Optimization & Governance
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled text-color">
+                                                <li><i class="fa-solid fa-gauge-simple-high"></i> Model Performance Monitoring & Tuning</li>
+                                                <li><i class="fa-solid fa-scale-balanced"></i> Explainable AI (XAI) & Bias Detection</li>
+                                                <li><i class="fa-solid fa-screwdriver-wrench"></i> Ongoing Maintenance & Support</li>
+                                                <li><i class="fa-solid fa-gavel"></i> AI Governance Framework Development</li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <h4 class="logo-color-1">Benefits</h4>
+                                <ul class="text-color">
+                                    <li>
+                                        <strong>Increased Efficiency & Productivity: </strong> Automate tasks, optimize processes, and free up valuable human resources.
+                                    </li>
+                                    <li>
+                                        <strong>Enhanced Decision Making: </strong> Leverage data-driven insights to make informed business decisions.
+                                    </li>
+                                    <li>
+                                        <strong>Improved Customer Experience: </strong> Personalize interactions, predict customer needs, and offer targeted recommendations.
+                                    </li>
+                                    <li>
+                                        <strong>Innovation & Competitive Advantage: </strong> Competitive Advantage: Develop unique AI-powered solutions to gain a competitive edge.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 
             </section>
+            <section id="products">
+
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h1>Contact Us</h1>
+                            <p>emai@adeptnova.com</p>
+                            <p>+44 1234567891</p>
+                            <div class="social-icons"></div>
+                        </div>
+                        <div class="col-md-5 contact-r">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li>
+                                    AdeptNova
+                                </li>
+                                <li>
+                                    About Us
+                                </li>
+                                <li>
+                                    Services
+                                </li>
+                                <li>
+                                    Products
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMBJUhe-4VWhiCR1eUj88mEPVmwn6Gqf2qwPHPXKrK7f5BhPrdtqdiptAN_-ThBCS1/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>

@@ -24,15 +24,29 @@ bode{
 
 .nav-link {
     color: #01b5f8;
-    padding: 30px 15px 8px;
+    padding: 30px 15px 8px !important;
 }
 
 nav.navbar.navbar-expand-lg.bg-light {
     padding: 0px 20px 10px 20px;
 }
 
+.home-content{
+    align-self: center;
+}
+
 img{
     max-width: 100%;
+}
+
+.gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #ec6d1e, #f3ec78);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 }
 
 .relative{
@@ -68,12 +82,25 @@ img{
 }
 
 .top-image {
-    background: linear-gradient(200deg, #30318f, #00b6f8, #c2e4f6, #e86e22);
+    background: linear-gradient(200deg, #30318f, #00b6f8, #c2e4f6);
+    padding-top: 5rem;
 }
 
 .home-h {
     font-weight: 700;
     color: #2e3192;
+}
+
+.logo-bg-3{
+    background: #bce5fa !important;
+}
+
+.logo-color-1{
+    color: #2e3192;
+}
+
+.text-color{
+    color: #54809f;
 }
 
 .benefits {
@@ -83,7 +110,7 @@ img{
 }
 
 .icons {
-    padding: 30px 0 0 0;
+    padding: 5px 15px 0px 15px;
     width: 94px;
     height: 94px;
     color: #fff;
@@ -94,10 +121,8 @@ img{
     -webkit-border-radius: 50%;
     border-radius: 0;
     display: inline-table;
-    border: 1px solid #FFFFFF;
     background: transparent;
-    color: #EA2D2D;
-    border: 1px solid #9E9E9E;
+    color: #ec6d1e;
     font-style: normal !important;
     background: #F5F5F5;
     /* border-radius: 33%; */
@@ -110,16 +135,152 @@ img{
     background: #FFFFFF;
     padding: 44px 26px 20px;
     margin-top: -29px;
-    border: 1px solid #9E9E9E;
-    border-bottom: 4px solid #A2A2A2;
+    border-bottom: 4px solid #eb6d1e;
     text-align: left;
+    box-shadow: 1px 20px 25px 0px rgb(188 229 249);
 }
 
-#service {
+.top-page-padding {
     position: relative;
     background: #fff;
-    padding: 50px 0 0px 0;
+    padding-top: 80px;
 }
+
 .row, .row-fluid {
     margin-bottom: 30px;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 6px;
+    padding-top: 5px;
+    margin-left: 2px;
+    line-height: 30px;
+    font-weight: 700;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px
+}
+
+@media (max-width:991px) {
+    .grid-container-1 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px
+    }
+}
+
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 0 8.5rem;
+}
+
+.main {
+    height: 260px;
+    transition: all ease .5s;
+    overflow: hidden
+}
+
+.glasses {
+    position: relative;
+    top: -11.5em;
+    left: 1em;
+    width: 55%;
+    height: 83%;
+    transition: .4s ease-in-out;
+    color: #00b6f8;
+}
+
+.heading {
+    color: #03b5f4;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 2em;
+    padding-left: 1em;
+    transition: .4s ease-in-out
+}
+
+.card-con{
+    color: #fff;
+    padding: 0 1rem;
+    opacity: 80%;
+}
+
+.card {
+    position: relative;
+    top: 2em;
+    height: 12.5em;
+    background: rgba(255,255,255,.07);
+    transition: .4s ease-in-out;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,.07) 0px 1px 1px,rgba(0,0,0,.07) 0px 2px 2px,rgba(0,0,0,.07) 0px 4px 4px,rgba(0,0,0,.07) 0px 8px 8px,rgba(0,0,0,.07) 0px 16px 16px;
+    overflow: hidden
+}
+
+.border-card-one {
+    border-left: 4px solid #00b6f8;
+    border-bottom-left-radius: 9px
+}
+
+.service-bg {
+    padding: 2rem;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.btn-box{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.btn-box button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ser-tab {
+    overflow: hidden;
+    position: relative;
+    height: 880px;
+}
+
+#s1{
+    transform: translateX(0px);
+}
+
+.btn-tab{
+    color: #e86e22 !important;
+    border-bottom: 4px solid #eb6d1e !important;
+}
+
+.contact-r form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #00b6f8;
+    padding: 15px;
+    margin: 15px 0;
+    color: #e86e22;
 }
