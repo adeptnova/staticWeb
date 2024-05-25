@@ -284,3 +284,15 @@ form input, form textarea{
     margin: 15px 0;
     color: #e86e22;
 }
+
+.contact-footer{
+    background: linear-gradient(160deg, #c2e4f6, #c2e4f6, #00b6f8)
+}
+
+#contact {
+    background: #30318f;
+}
+
+.border-bottom{
+    border-bottom: #ec6d1e 2px solid !important;
+}

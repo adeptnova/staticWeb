@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 function openTab(btnName, seviceid){
-    for(var i=1; i<=2; i++){
+    for(var i=1; i<=4; i++){
         var id = "s" + i;
         var service = document.getElementById(id);
         service.style.transform = "translateX(100%)";
