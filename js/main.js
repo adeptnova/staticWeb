@@ -16,6 +16,29 @@ $(document).ready(function(){
       .pauseFor(1000) 
       .deleteChars(20)
       .start();
+
+      $("#submit-content").on('click', function(){
+        if($("#contact-name").val() != '' && $("#contact-email").val() != '' && $("#contact-message").val() != ''){
+            $("#contact-name").val("");
+            $("#contact-email").val("");
+            $("#contact-message").val("");
+            const alertMessage = document.createElement('div');
+            alertMessage.classList.add('alert', 'alert-success'); // Change the alert class as needed
+
+            const messageText = document.createTextNode('Form submitted successfully!');
+            alertMessage.appendChild(messageText);
+
+            const alertContainer = document.getElementById('alert-message');
+            alertContainer.appendChild(alertMessage);
+
+            // Remove alert after 5 seconds
+            window.setTimeout(function() {
+            alertContainer.removeChild(alertMessage);
+            }, 5000);
+
+            
+        }
+      });
 });
 
 function openTab(btnName, seviceid){
