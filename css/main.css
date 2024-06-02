@@ -78,7 +78,8 @@ img{
 }
 
 .padding-top-4 {
-    padding: 1rem !important
+    padding: 1rem !important;
+    padding-top: 6rem !important;
 }
 
 .top-image {
